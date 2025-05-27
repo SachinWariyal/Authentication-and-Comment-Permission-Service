@@ -28,7 +28,7 @@ auth-comment-service/
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/your-username/auth-comment-service.git
+git clone https://github.com/SachinWariyal/Authentication-and-Comment-Permission-Service
 cd auth-comment-service
 ```
 
