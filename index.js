@@ -26,10 +26,16 @@ app.use('/api/permissions', permissionRoutes);
 app.use('/api/comments', authenticate, commentRoutes);
 
 const cors = require('cors');
+
 app.use(cors({
-  origin: 'http://localhost:5173/', // replace with your React app URL if hosted
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    // 'https://your-frontend-domain.com'
+  ],
   credentials: true
 }));
+
 
 // Start server
 const PORT = process.env.PORT || 5000;
