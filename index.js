@@ -25,6 +25,12 @@ app.use('/api/auth', authRoutes);
 app.use('/api/permissions', permissionRoutes);
 app.use('/api/comments', authenticate, commentRoutes);
 
+const cors = require('cors');
+app.use(cors({
+  origin: 'http://localhost:5173/', // replace with your React app URL if hosted
+  credentials: true
+}));
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
