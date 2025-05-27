@@ -31,9 +31,9 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:3000',
-    // 'https://your-frontend-domain.com'
+    'https://taupe-froyo-0f7cc1.netlify.app/'
   ],
-  credentials: true
+//   credentials: true
 }));
 
 
